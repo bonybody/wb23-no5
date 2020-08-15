@@ -213,11 +213,20 @@ footer a:active {
   color: #fff;
 }
 
-.page_links_wrap {
+footer .page_links_wrap {
   margin-bottom: 30px;
 
   display  : flex;
   flex-wrap: wrap;
+}
+
+footer .page_links_wrap .page_links {
+  margin: 0 30px;
+}
+
+.page_links h4 {
+  width: 200px;
+  border-bottom: 2px rgba(255, 255, 255, 0.7) solid;
 }
 
 footer .footer_bar {
