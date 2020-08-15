@@ -13,6 +13,14 @@ a {
   text-decoration: none;
 }
 
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #333;
+}
+
+
 figure {
   margin: 0;
 }
@@ -199,9 +207,9 @@ footer {
 }
 
 footer a:link,
-a:visited,
-a:hover,
-a:active {
+footer a:visited,
+footer a:hover,
+footer a:active {
   color: #fff;
 }
 
