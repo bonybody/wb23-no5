@@ -1,0 +1,217 @@
+@charset 'utf-8';
+
+/*全体の設定*/
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+
+  font-size       : 16px;
+  color           : #333;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-decoration: none;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  width           : 100%;
+  min-height      : 50px;
+  max-height      : 100px;
+  padding         : 0 10px;
+  box-sizing      : border-box;
+  background-color: #fff;
+  box-shadow      : 0 3px 5px 0px rgba(0, 0, 0, 0.1);
+
+  position: relative;
+  z-index : 1;
+
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+header .site_title {
+  height     : 50px;
+  font-size  : 30px;
+  font-family: serif;
+}
+
+header nav {
+  max-width: 600px;
+  width    : 100vw;
+
+  display        : flex;
+  justify-content: space-around;
+}
+
+header nav .nav_item {
+  padding            : 2px 4px;
+  margin             : 6px 0;
+  transition-duration: 0.2s;
+}
+
+header nav .nav_item a {
+  color      : #333;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size  : clamp(14px, 3vw, 16px);
+
+  transition-duration: 0.2s;
+
+}
+
+header nav .nav_item:hover a {
+  color: #fff;
+}
+
+header nav .nav_item:hover {
+  background-color: rgba(0, 227, 67, 0.3);
+  border-radius   : 100px;
+}
+
+main {
+  width: 100%;
+}
+
+.mainvisual .top_message {
+  color      : 707070;
+  text-align : center;
+  font-family: serif;
+
+}
+
+.mainvisual {
+  height: clamp(200px, 50vw, calc(100vh - 50px));
+}
+
+
+.mainvisual .top_message .main_message {
+  font-size: clamp(16px, 10vw, 100px);
+}
+
+.mainvisual .top_message .sub_message {
+  font-size: clamp(14px, 3vw, 60px);
+
+}
+
+.mainvisual figure {
+  margin: 0;
+}
+
+.mainvisual figure img {
+  width: 100%;
+}
+
+.introduction {
+  display         : flex;
+  justify-content : space-around;
+  align-items     : center;
+  background-color: #fff;
+  margin          : 50px 0;
+}
+
+.introduction .right,
+.introduction .left {
+  width  : 600px;
+  padding: 50px;
+}
+
+#product {
+  flex-wrap: wrap-reverse;
+}
+
+#column {
+  flex-wrap: wrap;
+}
+
+.item_list {
+  display        : flex;
+  flex-wrap      : wrap;
+  justify-content: space-around;
+}
+
+
+.item {
+  width        : 250px;
+  margin-bottom: 30px;
+  box-shadow   : 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.item figure {
+  bottom: 0;
+}
+
+.item figure img {
+  width         : 250px;
+  height        : 250px;
+  vertical-align: bottom;
+}
+
+.item .name,
+.item .price {
+  padding   : 5px;
+  box-sizing: border-box;
+}
+
+.item .price {
+  background-color: #aaa;
+}
+
+.more {
+  font-size: large;
+
+  text-align: right;
+}
+
+.details h1:before {
+  content         : "";
+  display         : inline-block;
+  vertical-align  : middle;
+  width           : 5px;
+  height          : 1em;
+  margin-bottom   : 5px;
+  margin-right    : 3px;
+  background-color: rgba(0, 227, 67, 1);
+}
+
+.details .description {
+  color    : rgba(0, 227, 67, 1);
+  font-size: 20px
+}
+
+.details .sub_description {
+  margin: 30px 0;
+}
+
+footer {
+  color           : #fff;
+  background-color: #888;
+  padding         : 30px;
+  box-sizing      : border-box;
+}
+
+footer a:link,
+a:visited,
+a:hover,
+a:active {
+  color: #fff;
+}
+
+.page_links_wrap {
+  margin-bottom: 30px;
+
+  display  : flex;
+  flex-wrap: wrap;
+}
+
+footer .footer_bar {
+  text-align: center;
+}
